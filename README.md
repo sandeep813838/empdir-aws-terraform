@@ -12,7 +12,7 @@ VPC, IAM, Security Groups, EC2 (bastion + app), Auto Scaling Group + ALB, and RD
 - `modules/rds` — RDS MySQL with auto-generated password stored in SSM Parameter Store
 
 ## Backend
-Remote state in S3 with DynamoDB state locking.
+Remote state is stored in an S3 bucket. The Terraform backend is configured with `use_lockfile = true`, so this setup does not use a DynamoDB table for state locking.
 
 ## Usage
 1. Copy `terraform.tfvars.example` to `terraform.tfvars` and fill in your values
