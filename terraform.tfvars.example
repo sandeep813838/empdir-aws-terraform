@@ -1,0 +1,4 @@
+aws_region   = "ap-south-1"
+project_name = "empdir"
+environment  = "dev"
+my_ip        = "YOUR_IP_HERE/32"
