@@ -12,7 +12,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "empdir-dev-tfstate-403146114272"
+    bucket         = "empdir-dev-tfstate-061534656974"
     key            = "empdir/dev/terraform.tfstate"
     region         = "ap-south-1"
     use_lockfile   = true
