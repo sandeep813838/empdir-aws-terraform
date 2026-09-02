@@ -14,7 +14,7 @@ resource "aws_instance" "bastion" {
 
 resource "aws_instance" "app" {
   ami                    = var.ami_id
-  instance_type          = "t3.micro"
+  instance_type          = "t3.small" # was "t3.micro"
   key_name               = var.key_name
   subnet_id              = var.private_subnet_id
   vpc_security_group_ids = [var.app_sg_id]
